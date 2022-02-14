@@ -28,8 +28,23 @@ box-sizing: border-box;
 
 .form-group form input[type="text"],
 .form-group form input[type="email"],
-.form-group form input[type="number"],
-.form-group form input[type="submit"]{
+.form-group form input[type="number"]{
+display: inline-block;
+width: 100%;
+padding: 0 20px;
+line-height: 10px;
+height: 40px;
+background: ghostwhite;
+border: solid 1px lightgray;
+border-bottom-width: 3px;
+border-radius: 5px;
+-webkit-transition: all 0.3s ease;
+transition: all 0.3s ease;
+outline: none;
+margin-bottom: 10px;
+}
+
+#submit{
 display: inline-block;
 width: 100%;
 padding: 0 20px;
@@ -58,7 +73,7 @@ margin-bottom: 10px;
 border-color: #FE51B9;
 }
 
-.form-group form input[type="submit"]{
+.form-group #submit{
 	position: relative;
 	z-index: 1;
 	display: 0 20px;
